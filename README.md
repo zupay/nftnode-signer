@@ -62,7 +62,7 @@ The `.env` file contains the following parameters:
 
 ```env
 PRIVATE_KEY=<your_private_key_here>         # wallet private key
-CONSIDERATION_ADDRESSES=0xabc...,0xdef...   # comma-separated list of allowed contract addresses
+CONSIDERATION_ADDRESSES=0xabc...,0xdef...   # comma-separated list of allowed contract addresses of collections we are bidding on. IF not set all we be allowed.
 MAX_BID=1.0                                 # max allowed offer amount in ETH
 NFTNODE_USERNAME=<username>                 # nftnode.io account
 NFTNODE_PASSWORD=<password>
