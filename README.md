@@ -5,7 +5,7 @@ The **Signer** is a Node.js script that runs locally and connects to the server 
 The signer receives offer requests to sign from the server. It listens for incoming requests, validates them, and only signs if they meet all configured security criteria.
 
 Each signature request is strictly validated:
-- Only [Seaport](https://docs.opensea.io/v2.0/reference/seaport-overview) offers are accepted.
+- Only [Seaport](https://docs.opensea.io/docs/seaport) offers are accepted.
 - The offer must match specific collections and price limits, which are configurable.
 
 This repository is public so that anyone can review the code and verify that:
@@ -65,7 +65,7 @@ PRIVATE_KEY=<your_private_key_here>         # wallet private key
 CONSIDERATION_ADDRESSES=0xabc...,0xdef...   # comma-separated list of allowed contract addresses
 MAX_BID=1.0                                 # max allowed offer amount in ETH
 NFTNODE_USERNAME=<username>                 # nftnode.io account
-NFTNODE_PASSWORD<password>
+NFTNODE_PASSWORD=<password>
 ```
 
 **⚠️ Never commit your `.env` file or private key to version control.**
